@@ -43,7 +43,7 @@
                         image: "assets/steak.jpg",
                         items: [
                             { id: "i9", name: "Filete Mignon", price: "32.00", desc: "Medalhão de vitela selecionada, servido sobre um risotto cremoso de cogumelos silvestres", ingredients: ["Vitela", "Cogumelos", "Arroz Arborio"], image: "assets/steak.jpg", tags: ["GF"] },
-                            { id: "i10", name: "Costelas de Cordeiro", price: "30.00", desc: "Cordeiro assado lentamente, com um puré rústico de ervilhas frescas e toque de menta", ingredients: ["Cordeiro", "Ervilhas", "Menta"], image: "https://picsum.photos/seed/lamb/600/400", tags: ["GF"] },
+                            { id: "i10", name: "Costelas de Cordeiro", price: "30.00", desc: "Cordeiro assada lentamente, com um puré rústico de ervilhas frescas e toque de menta", ingredients: ["Cordeiro", "Ervilhas", "Menta"], image: "https://picsum.photos/seed/lamb/600/400", tags: ["GF"] },
                             { id: "i11", name: "Wagyu Steak", price: "45.00", desc: "Corte premium de Wagyu, selado em alta temperatura com sal Maldon e manteiga de ervas do nosso jardim", ingredients: ["Wagyu", "Manteiga", "Salsa"], image: "https://picsum.photos/seed/wagyu/600/400", tags: ["GF"] },
                             { id: "i19", name: "Magret de Pato", price: "29.00", desc: "Peito de pato glaciado com redução de frutos vermelhos e puré de cenoura", ingredients: ["Pato", "Frutos Vermelhos", "Cenoura"], image: "https://picsum.photos/seed/duck/600/400", tags: ["GF"] },
                             { id: "i20", name: "Risotto de Carne", price: "24.00", desc: "Arroz arborio cremoso com pontas de filé, parmesão reggiano e toque de trufa", ingredients: ["Carne", "Arroz", "Trufa"], image: "https://picsum.photos/seed/meat-risotto/600/400", tags: [] }
@@ -77,8 +77,8 @@
                         items: [
                             { id: "i1", name: "Salmon Carpaccio", price: "14.00", desc: "Fresh salmon slices delivered every morning, finished with crispy capers and Sicilian lemon", ingredients: ["Salmon", "Capers", "Lemon", "Olive Oil"], image: "assets/salmon.jpg", tags: ["GF"] },
                             { id: "i2", name: "Creamy Burrata", price: "12.50", desc: "Authentic Puglia Burrata, served with cherry tomatoes slowly confited in extra virgin olive oil", ingredients: ["Burrata", "Tomato", "Basil"], image: "https://picsum.photos/seed/burrata/600/400", tags: ["V"] },
-                            { id: "i5", name: "Tuna Tartare", price: "16.00", desc: "Freshly chopped tuna with ripe avocado, toasted sesame and a subtle touch of ginger", ingredients: ["Tuna", "Avocado", "Sesame", "Ginger"], image: "https://picsum.photos/seed/tuna/600/400", tags: ["GF"] },
-                            { id: "i6", name: "Jamón Croquettes", price: "11.00", desc: "Our artisanal Jamón Ibérico croquettes, with a creamy bechamel interior", ingredients: ["Jamón Ibérico", "Bechamel", "Cheese"], image: "assets/appetizer.jpg", tags: [] },
+                            { id: "i5", name: "Tuna Tartare", price: "16.00", desc: "Freshly chopped tuna with ripe avocado, toasted sesame and a subtle touch of ginger", ingredients: ["Tuna", "Avocado", "Sésamo", "Gengibre"], image: "https://picsum.photos/seed/tuna/600/400", tags: ["GF"] },
+                            { id: "i6", name: "Jamón Croquettes", price: "11.00", desc: "Our artisanal Jamón Ibérico croquettes, with a creamy bechamel interior", ingredients: ["Jamón Ibérico", "Bechamel", "Queijo"], image: "assets/appetizer.jpg", tags: [] },
                             { id: "i15", name: "Fig Bruschetta", price: "13.00", desc: "Toasted sourdough bread with goat cheese, fresh figs and acacia honey", ingredients: ["Fig", "Goat Cheese", "Honey"], image: "https://picsum.photos/seed/fig/600/400", tags: ["V"] },
                             { id: "i16", name: "Beetroot Carpaccio", price: "12.00", desc: "Salt-crusted roasted beetroot, with creamy cottage cheese and caramelized walnuts", ingredients: ["Beetroot", "Walnuts", "Cottage Cheese"], image: "https://picsum.photos/seed/beet/600/400", tags: ["V", "GF"] }
                         ]
@@ -91,7 +91,7 @@
                             { id: "i3", name: "Black Cod", price: "28.00", desc: "Rigorously cured cod loin, with a crispy black sesame crust and boiled potatoes", ingredients: ["Cod", "Sesame", "Potato"], image: "https://picsum.photos/seed/cod/600/400", tags: ["GF"] },
                             { id: "i4", name: "Grilled Sea Bass", price: "24.00", desc: "Fresh sea bass grilled to perfection, accompanied by seasonal vegetables sautéed in garlic", ingredients: ["Sea Bass", "Vegetables", "Olive Oil"], image: "https://picsum.photos/seed/bass/600/400", tags: ["GF"] },
                             { id: "i7", name: "Octopus Lagareiro", price: "26.00", desc: "Tender octopus, slowly cooked and finished with generous olive oil and smashed potatoes", ingredients: ["Octopus", "Olive Oil", "Garlic", "Potato"], image: "https://picsum.photos/seed/octopus/600/400", tags: ["GF"] },
-                            { id: "i8", name: "Glazed Salmon", price: "22.00", desc: "Salmon loin with an artisanal miso and ginger glaze, perfect balance between sweet and salty", ingredients: ["Salmon", "Miso", "Gengibre"], image: "assets/salmon.jpg", tags: ["GF"] },
+                            { id: "i8", name: "Glazed Salmon", price: "22.00", desc: "Salmon loin with an artisanal miso and ginger glaze, perfect balance between sweet and salty", ingredients: ["Salmon", "Miso", "Ginger"], image: "assets/salmon.jpg", tags: ["GF"] },
                             { id: "i17", name: "Linguine with Clams", price: "21.00", desc: "Fresh al dente pasta with coastal clams, garlic, parsley and a touch of white wine", ingredients: ["Pasta", "Clams", "White Wine"], image: "https://picsum.photos/seed/pasta-fish/600/400", tags: [] },
                             { id: "i18", name: "Seared Scallops", price: "26.00", desc: "Fresh scallops seared in noisette butter, served over cauliflower puree", ingredients: ["Scallops", "Butter", "Cauliflower"], image: "https://picsum.photos/seed/scallops/600/400", tags: ["GF"] }
                         ]
@@ -115,9 +115,9 @@
                         items: [
                             { id: "i12", name: "Chocolate Fondant", price: "10.00", desc: "Melted Belgian chocolate, with a liquid heart, served with a scoop of artisanal vanilla ice cream", ingredients: ["Chocolate", "Vanilla", "Eggs"], image: "https://picsum.photos/seed/fondant/600/400", tags: [] },
                             { id: "i13", name: "Fruit Cheesecake", price: "9.00", desc: "Creamy cheesecake with a vibrant berry glaze picked in season", ingredients: ["Cream Cheese", "Red Fruits"], image: "https://picsum.photos/seed/cheesecake/600/400", tags: ["GF"] },
-                            { id: "i14", name: "Tarte Tatin", price: "11.00", desc: "The classic caramelized apple tart, served warm with a dollop of crème fraîche", ingredients: ["Apple", "Caramel", "Puff Pastry"], image: "https://picsum.photos/seed/tatin/600/400", tags: [] },
+                            { id: "i14", name: "Tarte Tatin", price: "11.00", desc: "The classic caramelized apple tart, served warm with a dollop of crème fraîche", ingredients: ["Apple", "Caramel", "Puff Pastry"], image: "https://picsum.//Tarte Tatin/600/400", tags: [] },
                             { id: "i21", name: "Passion Fruit Mousse", price: "8.00", desc: "Mousse leve e aerada de maracujá fresco com crocante de pistache", ingredients: ["Passion Fruit", "Pistachio"], image: "https://picsum.photos/seed/passion-fruit/600/400", tags: ["GF"] },
-                            { id: "i22", name: "Fruit Pavlova", price: "12.00", desc: "Crispy on the outside and soft on the inside meringue, with light cream and seasonal fruits", ingredients: ["Egg Whites", "Sugar", "Fruits"], image: "https://picsum.photos/seed/pavlova/600/400", tags: ["GF"] }
+                            { id: "i22", name: "Fruit Pavlova", price: "12.00", desc: "Crispy on the outside and soft on the inside meringue, with light cream and seasonal fruits", ingredients: ["Claras de Ovo", "Açúcar", "Frutas"], image: "https://picsum.photos/seed/pavlova/600/400", tags: ["GF"] }
                         ]
                     }
                 ]
@@ -129,24 +129,32 @@
                 const current = document.querySelector('.view.active');
                 const next = document.getElementById(viewId);
 
-                if (!current || !next) return;
+                if (!next) return;
 
-                current.style.opacity = '0';
-                current.style.transform = 'translateY(-10px)';
-
-                setTimeout(() => {
-                    current.classList.remove('active');
-                    next.classList.add('active');
-                    next.style.opacity = '1';
-                    next.style.transform = 'translateY(0)';
-                }, 300);
+                if (current) {
+                    current.style.opacity = '0';
+                    current.style.transform = 'translateY(-10px)';
+                    setTimeout(() => {
+                        current.classList.remove('active');
+                        this.activateView(next);
+                    }, 300);
+                } else {
+                    this.activateView(next);
+                }
+            },
+            activateView(view) {
+                view.classList.add('active');
+                view.style.opacity = '1';
+                view.style.transform = 'translateY(0)';
             }
         };
 
         function selectLanguage(lang) {
             localStorage.setItem('menu_lang', lang);
             ViewManager.navigateTo('view-main');
-            initMenu();
+            setTimeout(() => {
+                initMenu();
+            }, 350);
         }
 
         function initMenu() {
@@ -258,11 +266,7 @@
         }
 
         window.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('menu_lang') || 'pt';
-            if(savedLang) {
-                ViewManager.navigateTo('view-main');
-                initMenu();
-            } else {
-                ViewManager.navigateTo('view-language');
-            }
+            // FORÇAR A TELA DE LÍNGUAS (PARA TESTES)
+            // Removi a verificação de savedLang e forcei a navegação para 'view-language'
+            ViewManager.navigateTo('view-language');
         });
