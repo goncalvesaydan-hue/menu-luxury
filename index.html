@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Menu Online Premium</title>
+    <!-- High-End Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- VIEW: LANGUAGE SELECTION -->
+        <section id="view-language" class="view active">
+            <div class="welcome-container">
+                <div class="welcome-logo">M</div>
+                <h1 class="welcome-title text-serif">Bem-vindo</h1>
+                <p class="welcome-subtitle">Selecione a sua língua para começar</p>
+
+                <div class="lang-grid">
+                    <div class="lang-option" onclick="selectLanguage('pt')">
+                        <img src="https://flagcdn.com/w40/pt.png" class="flag-icon" alt="PT">
+                        <span class="lang-name">Português</span>
+                    </div>
+                    <div class="lang-option" onclick="selectLanguage('en')">
+                        <img src="https://flagcdn.com/w40/us.png" class="flag-icon" alt="EN">
+                        <span class="lang-name">English</span>
+                    </div>
+                    <div class="lang-option" onclick="selectLanguage('es')">
+                        <img src="https://flagcdn.com/w40/es.png" class="flag-icon" alt="ES">
+                        <span class="lang-name">Español</span>
+                    </div>
+                    <div class="lang-option" onclick="selectLanguage('fr')">
+                        <img src="https://flagcdn.com/w40/fr.png" class="flag-icon" alt="FR">
+                        <span class="lang-name">Français</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW: MAIN MENU -->
+        <section id="view-main" class="view">
+            <header class="menu-header">
+                <div class="menu-logo-small text-serif">MAISON LUXE</div>
+                <div class="category-nav" id="cat-nav">
+                    <!-- Categories injected by JS -->
+                </div>
+            </header>
+
+            <main id="menu-content">
+                <!-- Sections and Items injected by JS -->
+            </main>
+        </section>
+
+        <!-- LUXURY BOTTOM SHEET: ITEM DETAIL -->
+        <div id="detail-sheet" class="bottom-sheet">
+            <div class="sheet-handle"></div>
+            <div class="sheet-content">
+                <img id="detail-img" src="" class="detail-image" alt="Prato">
+                <div class="detail-info">
+                    <h1 id="detail-title" class="detail-title text-serif">Nome do Prato</h1>
+                    <div id="detail-price" class="detail-price text-accent">€0.00</div>
+                    <p id="detail-desc" class="detail-description">Descrição detalhada do prato...</p>
+
+                    <div class="ingredients-label">Ingredientes</div>
+                    <div id="detail-ingredients" class="ingredients-list">
+                        <!-- Tags injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sheet-overlay" class="sheet-overlay" onclick="closeDetail()"></div>
+
+        <!-- VIEW: BRANDING / UTILITY (Simplified for Prototype) -->
+        <section id="view-branding" class="view">
+            <div class="placeholder-text" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <h1 class="text-serif">Nossa História</h1>
+                <p class="text-muted">Conteúdo de Branding em breve...</p>
+                <div class="back-btn" style="position: absolute; bottom: 40px;" onclick="ViewManager.navigateTo('view-main')">Voltar</div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- External Logic -->
+    <script src="script.js" defer></script>
+</body>
+</html>

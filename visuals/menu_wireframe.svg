@@ -1,0 +1,56 @@
+<svg width="375" height="812" viewBox="0 0 375 812" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="375" height="812" fill="#FDFDFD"/>
+
+  <!-- Header / Logo Area -->
+  <rect x="0" y="0" width="375" height="120" fill="#FFFFFF"/>
+  <circle cx="187.5" cy="60" r="30" fill="#E0E0E0"/>
+  <text x="187.5" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#333333" font-weight="bold">NOME DO RESTAURANTE</text>
+
+  <!-- Category Navigation (Horizontal Scroll) -->
+  <rect x="0" y="120" width="375" height="60" fill="#FFFFFF"/>
+  <rect x="20" y="135" width="70" height="30" rx="15" fill="#333333"/>
+  <text x="55" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">Entradas</text>
+
+  <rect x="100" y="135" width="70" height="30" rx="15" fill="#E0E0E0"/>
+  <text x="135" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666666">Pratos</text>
+
+  <rect x="180" y="135" width="70" height="30" rx="15" fill="#E0E0E0"/>
+  <text x="215" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666666">Bebidas</text>
+
+  <rect x="260" y="135" width="70" height="30" rx="15" fill="#E0E0E0"/>
+  <text x="295" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666666">Doces</text>
+
+  <!-- Section Block (Basic Tier Imagery) -->
+  <rect x="20" y="200" width="335" height="160" rx="12" fill="#EEEEEE"/>
+  <text x="187.5" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#999999">[IMAGEM DA SECÇÃO - PLANO ESSENCIAL]</text>
+
+  <text x="20" y="380" font-family="Georgia, serif" font-size="24" fill="#1A1A1A" font-weight="bold">Peixes e Marisco</text>
+  <line x1="20" y1="390" x2="60" y2="390" stroke="#333333" stroke-width="2"/>
+
+  <!-- Menu Items -->
+  <!-- Item 1 -->
+  <rect x="20" y="410" width="335" height="80" rx="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <text x="35" y="435" font-family="Georgia, serif" font-size="18" fill="#333333" font-weight="bold">Salmão Grelhado</text>
+  <text x="310" y="435" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#333333" font-weight="bold">€24.00</text>
+  <text x="35" y="455" font-family="Arial, sans-serif" font-size="13" fill="#777777">Acompanhado de legumes salteados e arroz basmati.</text>
+  <text x="340" y="475" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#BDBDBD" font-style="italic">Clique para Detalhes &amp; Foto (Premium)</text>
+
+  <!-- Item 2 -->
+  <rect x="20" y="500" width="335" height="80" rx="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <text x="35" y="525" font-family="Georgia, serif" font-size="18" fill="#333333" font-weight="bold">Bacalhau à Brás</text>
+  <text x="310" y="525" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#333333" font-weight="bold">€18.50</text>
+  <text x="35" y="545" font-family="Arial, sans-serif" font-size="13" fill="#777777">Clássico português com azeitonas e salsa fresca.</text>
+  <text x="340" y="565" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#BDBDBD" font-style="italic">Clique para Detalhes &amp; Foto (Premium)</text>
+
+  <!-- Item 3 -->
+  <rect x="20" y="590" width="335" height="80" rx="8" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="1"/>
+  <text x="35" y="615" font-family="Georgia, serif" font-size="18" fill="#333333" font-weight="bold">Lulas Recheadas</text>
+  <text x="310" y="615" text-anchor="end" font-family="Arial, sans-serif" font-size="16" fill="#333333" font-weight="bold">€15.00</text>
+  <text x="35" y="635" font-family="Arial, sans-serif" font-size="13" fill="#777777">Lulas frescas com recheio de camarão e ervas.</text>
+  <text x="340" y="655" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#BDBDBD" font-style="italic">Clique para Detalhes &amp; Foto (Premium)</text>
+
+  <!-- Footer -->
+  <rect x="0" y="750" width="375" height="62" fill="#F5F5F5"/>
+  <text x="187.5" y="785" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#999999">© 2026 Nome do Restaurante - Experiência Digital</text>
+</svg>
