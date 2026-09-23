@@ -75,11 +75,25 @@
             text-align: center;
             height: 100vh;
             background: var(--bg-color);
+            position: relative;
+        }
+
+        .language-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://picsum.photos/seed/restaurant/1920/1080') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: 0;
         }
 
         .welcome-container {
             max-width: 400px;
             animation: fadeInUp 1.2s ease-out;
+            position: relative;
+            z-index: 1;
         }
 
         .welcome-logo {
@@ -120,6 +134,10 @@
             cursor: pointer;
             transition: var(--transition-main);
             background: white;
+            font-family: inherit;
+            color: inherit;
+            appearance: none;
+            outline: none;
         }
 
         .lang-option:hover {
@@ -150,6 +168,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(250, 249, 246, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         .menu-logo-small {
@@ -259,11 +283,31 @@
 
         .item-row {
             display: grid;
-            grid-template-columns: 1fr auto;
-            align-items: baseline;
+            grid-template-columns: 80px 1fr auto;
+            gap: var(--sp-4);
+            align-items: center;
             cursor: pointer;
             transition: opacity 0.2s ease;
             opacity: 1; /* Fix: Tornando visível por padrão para evitar bugs de carregamento */
+        }
+
+        .item-thumbnail {
+            width: 80px;
+            height: 80px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .item-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .item-row:hover .item-thumbnail img {
+            transform: scale(1.1);
         }
 
         .item-row.reveal {
@@ -347,6 +391,11 @@
             overflow-y: auto;
             display: flex;
             flex-direction: column;
+            touch-action: pan-y;
+        }
+
+        .bottom-sheet.dragging {
+            transition: none !important;
         }
 
         @media (min-width: 1024px) {
@@ -475,8 +524,8 @@
         }
 
         @keyframes itemFadeIn {
-            from { opacity: 0; transform: translateX(-10px); }
-            to { opacity: 1; transform: translateX(0); }
+            from { opacity: 0; transform: translateX(-10px) scale(0.95); }
+            to { opacity: 1; transform: translateX(0) scale(1); }
         }
 
         ::-webkit-scrollbar { display: none; }

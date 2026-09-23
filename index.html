@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Menu Online Premium</title>
+    <title>Menu Online Premium - Maison Luxe</title>
+    <meta name="description" content="Explore o nosso menu exclusivo. Alta gastronomia, ingredientes frescos e uma experiência de luxo.">
     <!-- High-End Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +18,30 @@
     <div id="app">
 
         <!-- VIEW: LANGUAGE SELECTION -->
-        <section id="view-language" class="view active">
+        <section id="view-language" class="view active" aria-label="Seleção de Idioma">
+            <div class="language-bg"></div> <!-- Luxury background image layer -->
             <div class="welcome-container">
                 <div class="welcome-logo">M</div>
-                <h1 class="welcome-title text-serif">Bem-vindo</h1>
-                <p class="welcome-subtitle">Selecione a sua língua para começar</p>
+                <h1 class="welcome-title text-serif">Maison Luxe</h1>
+                <p class="welcome-subtitle">Selecione o idioma para começar<br>Select your language to begin</p>
 
                 <div class="lang-grid">
-                    <div class="lang-option" onclick="selectLanguage('pt')">
-                        <img src="https://flagcdn.com/w40/pt.png" class="flag-icon" alt="PT">
+                    <button class="lang-option" onclick="selectLanguage('pt')" aria-label="Português">
+                        <img src="https://flagcdn.com/w40/pt.png" class="flag-icon" alt="" aria-hidden="true">
                         <span class="lang-name">Português</span>
-                    </div>
-                    <div class="lang-option" onclick="selectLanguage('en')">
-                        <img src="https://flagcdn.com/w40/us.png" class="flag-icon" alt="EN">
+                    </button>
+                    <button class="lang-option" onclick="selectLanguage('en')" aria-label="English">
+                        <img src="https://flagcdn.com/w40/us.png" class="flag-icon" alt="" aria-hidden="true">
                         <span class="lang-name">English</span>
-                    </div>
-                    <div class="lang-option" onclick="selectLanguage('es')">
-                        <img src="https://flagcdn.com/w40/es.png" class="flag-icon" alt="ES">
+                    </button>
+                    <button class="lang-option" onclick="selectLanguage('es')" aria-label="Español">
+                        <img src="https://flagcdn.com/w40/es.png" class="flag-icon" alt="" aria-hidden="true">
                         <span class="lang-name">Español</span>
-                    </div>
-                    <div class="lang-option" onclick="selectLanguage('fr')">
-                        <img src="https://flagcdn.com/w40/fr.png" class="flag-icon" alt="FR">
+                    </button>
+                    <button class="lang-option" onclick="selectLanguage('fr')" aria-label="Français">
+                        <img src="https://flagcdn.com/w40/fr.png" class="flag-icon" alt="" aria-hidden="true">
                         <span class="lang-name">Français</span>
-                    </div>
+                    </button>
                 </div>
             </div>
         </section>
@@ -59,8 +61,8 @@
         </section>
 
         <!-- LUXURY BOTTOM SHEET: ITEM DETAIL -->
-        <div id="detail-sheet" class="bottom-sheet">
-            <div class="sheet-handle"></div>
+        <div id="detail-sheet" class="bottom-sheet" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+            <div class="sheet-handle" aria-hidden="true"></div>
             <div class="sheet-content">
                 <img id="detail-img" src="" class="detail-image" alt="Prato">
                 <div class="detail-info">
@@ -89,6 +91,7 @@
     </div>
 
     <!-- External Logic -->
+    <script src="data.js" defer></script>
     <script src="script.js" defer></script>
 </body>
 </html>
