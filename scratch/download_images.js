@@ -39,6 +39,10 @@ if (!fs.existsSync(assetsDir)){
 
 async function downloadImage(id, keyword) {
     const destPath = path.join(assetsDir, `${id}.jpg`);
+    if (fs.existsSync(destPath)) {
+        console.log(`Skipping ${id}.jpg as it already exists.`);
+        return;
+    }
     const url = `https://loremflickr.com/600/400/${keyword}/all?lock=1`;
     
     const res = await fetch(url);
