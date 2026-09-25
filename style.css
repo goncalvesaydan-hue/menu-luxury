@@ -76,7 +76,6 @@
             height: 100dvh;
             background: var(--bg);
             position: relative;
-            display: none; /* Added to match .view definition */
             flex-direction: column;
         }
 
