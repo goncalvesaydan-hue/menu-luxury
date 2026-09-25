@@ -282,7 +282,7 @@
             gap: var(--sp-4);
             align-items: center;
             cursor: pointer;
-            padding: var(--sp-3) 0;
+            padding: var(--sp-3) var(--sp-4);
             border-bottom: 1px solid rgba(0,0,0,0.03);
             transition: var(--transition);
             -webkit-user-select: none;
@@ -334,6 +334,7 @@
             font-weight: 700;
             color: var(--accent); /* Preço agora com cor de destaque */
             white-space: nowrap;
+            padding-right: var(--sp-4);
         }
 
         /* --- BOTTOM SHEET --- */
