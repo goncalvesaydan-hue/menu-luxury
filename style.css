@@ -359,8 +359,8 @@
 
         .close-detail-btn {
             position: absolute;
-            top: calc(var(--sp-2) * 2);
-            left: var(--sp-4);
+            top: 12px;
+            left: 16px;
             width: 32px;
             height: 32px;
             display: flex;
