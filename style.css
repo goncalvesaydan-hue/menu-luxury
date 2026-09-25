@@ -359,12 +359,10 @@
 
         .close-detail-btn {
             position: absolute;
-            top: var(--sp-3);
-            left: var(--sp-3);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(0,0,0,0.05);
+            top: calc(var(--sp-2) * 2);
+            left: var(--sp-4);
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -375,8 +373,8 @@
         }
 
         .close-detail-btn:active {
-            background: rgba(0,0,0,0.1);
             transform: scale(0.9);
+            opacity: 0.7;
         }
 
 
