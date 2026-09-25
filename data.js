@@ -63,7 +63,7 @@ const MENU_DATA = {
             {
                 id: "sec-1",
                 name: "Appetizers",
-                image: "assets/sec-1.jpg",
+                image: "assets/i1.jpg",
                 items: [
                     { id: "i1", name: "Salmon Carpaccio", price: "14.00", desc: "Fresh salmon slices delivered every morning, finished with crispy capers and Sicilian lemon", ingredients: ["Salmon", "Capers", "Lemon", "Olive Oil"], image: "assets/i1.jpg", tags: ["GF"] },
                     { id: "i2", name: "Creamy Burrata", price: "12.50", desc: "Authentic Puglia Burrata, served with cherry tomatoes slowly confited in extra virgin olive oil", ingredients: ["Burrata", "Tomato", "Basil"], image: "assets/i2.jpg", tags: ["V"] },
@@ -118,7 +118,7 @@ const MENU_DATA = {
             {
                 id: "sec-1",
                 name: "Entrantes",
-                image: "assets/sec-1.jpg",
+                image: "assets/i1.jpg",
                 items: [
                     { id: "i1", name: "Carpaccio de Salmón", price: "14.00", desc: "Láminas de salmón fresco que llegan todas las mañanas, finalizadas con alcaparras crujientes y limón siciliano", ingredients: ["Salmón", "Alcaparras", "Limón", "Aceite"], image: "assets/i1.jpg", tags: ["GF"] },
                     { id: "i2", name: "Burrata Cremosa", price: "12.50", desc: "La auténtica Burrata de Puglia, servida con tomates cereza confitados lentamente en aceite extra virgen", ingredients: ["Burrata", "Tomate", "Albahaca"], image: "assets/i2.jpg", tags: ["V"] },
@@ -173,7 +173,7 @@ const MENU_DATA = {
             {
                 id: "sec-1",
                 name: "Entrées",
-                image: "assets/sec-1.jpg",
+                image: "assets/i1.jpg",
                 items: [
                     { id: "i1", name: "Carpaccio de Saumon", price: "14.00", desc: "Fines tranches de saumon frais livrées chaque matin, finies avec des câpres croquantes et du citron sicilien", ingredients: ["Saumon", "Câpres", "Citron", "Huile d'olive"], image: "assets/i1.jpg", tags: ["GF"] },
                     { id: "i2", name: "Burrata Crémeuse", price: "12.50", desc: "L'authentique Burrata des Pouilles, servie avec des tomates cerises confites lentement dans l'huile d'olive extra vierge", ingredients: ["Burrata", "Tomate", "Basilic"], image: "assets/i2.jpg", tags: ["V"] },
