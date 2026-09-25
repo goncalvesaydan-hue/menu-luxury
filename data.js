@@ -21,7 +21,7 @@ const MENU_DATA = {
             {
                 id: "sec-2",
                 name: "Peixes",
-                image: "assets/sec-2.jpg",
+                image: "assets/i3.jpg",
                 items: [
                     { id: "i3", name: "Bacalhau Preto", price: "28.00", desc: "Lombo de bacalhau rigorosamente curado, com uma crosta crocante de sésamo preto e batatas cozidas", ingredients: ["Bacalhau", "Sésamo", "Batata"], image: "assets/i3.jpg", tags: ["GF"] },
                     { id: "i4", name: "Robalo Grelhado", price: "24.00", desc: "Robalo fresco grelhado no ponto certo, acompanhado por legumes da época salteados no alho", ingredients: ["Robalo", "Legumes", "Azeite"], image: "assets/i4.jpg", tags: ["GF"] },
@@ -76,7 +76,7 @@ const MENU_DATA = {
             {
                 id: "sec-2",
                 name: "Fish",
-                image: "assets/sec-2.jpg",
+                image: "assets/i3.jpg",
                 items: [
                     { id: "i3", name: "Black Cod", price: "28.00", desc: "Rigorously cured cod loin, with a crispy black sesame crust and boiled potatoes", ingredients: ["Cod", "Sesame", "Potato"], image: "assets/i3.jpg", tags: ["GF"] },
                     { id: "i4", name: "Grilled Sea Bass", price: "24.00", desc: "Fresh sea bass grilled to perfection, accompanied by seasonal vegetables sautéed in garlic", ingredients: ["Sea Bass", "Vegetables", "Olive Oil"], image: "assets/i4.jpg", tags: ["GF"] },
@@ -131,7 +131,7 @@ const MENU_DATA = {
             {
                 id: "sec-2",
                 name: "Pescados",
-                image: "assets/sec-2.jpg",
+                image: "assets/i3.jpg",
                 items: [
                     { id: "i3", name: "Bacalao Negro", price: "28.00", desc: "Lomo de bacalao rigurosamente curado, con una costra crujiente de sésamo negro y patatas cocidas", ingredients: ["Bacalao", "Sésamo", "Patata"], image: "assets/i3.jpg", tags: ["GF"] },
                     { id: "i4", name: "Lubina a la Plancha", price: "24.00", desc: "Lubina fresca asada al punto exacto, acompañada de verduras de temporada salteadas con ajo", ingredients: ["Lubina", "Verduras", "Aceite"], image: "assets/i4.jpg", tags: ["GF"] },
@@ -186,7 +186,7 @@ const MENU_DATA = {
             {
                 id: "sec-2",
                 name: "Poissons",
-                image: "assets/sec-2.jpg",
+                image: "assets/i3.jpg",
                 items: [
                     { id: "i3", name: "Cabillaud Noir", price: "28.00", desc: "Longe de cabillaud rigoureusement curée, avec une croûte croquante de sésame noir et pommes de terre bouillies", ingredients: ["Cabillaud", "Sésame", "Pomme de terre"], image: "assets/i3.jpg", tags: ["GF"] },
                     { id: "i4", name: "Bar Grillé", price: "24.00", desc: "Bar frais grillé à la perfection, accompagné de légumes de saison sautés à l'ail", ingredients: ["Bar", "Légumes", "Huile d'olive"], image: "assets/i4.jpg", tags: ["GF"] },
