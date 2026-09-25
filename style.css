@@ -193,21 +193,24 @@
         .back-to-lang-btn {
             display: flex;
             align-items: center;
-            gap: 6px;
+            justify-content: center;
             cursor: pointer;
             color: var(--text-muted);
             transition: var(--transition);
-            font-size: 12px;
+            font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-weight: 500;
-            padding: 4px 8px;
-            border-radius: 4px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.06);
         }
 
         .back-to-lang-btn:active {
             color: var(--primary);
-            background: rgba(0,0,0,0.05);
+            background: rgba(0,0,0,0.08);
+            transform: scale(0.95);
         }
 
         .menu-logo-small {
