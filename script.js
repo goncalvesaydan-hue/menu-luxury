@@ -13,9 +13,11 @@ const ViewManager = {
 
         setTimeout(() => {
             if (current) current.classList.remove('active');
-            next.classList.add('active');
-            next.style.opacity = '1';
-            next.style.transform = 'translateY(0)';
+            if (next) {
+                next.classList.add('active');
+                next.style.opacity = '1';
+                next.style.transform = 'translateY(0)';
+            }
         }, 300);
     }
 };
@@ -30,8 +32,15 @@ function initMenu() {
     const lang = localStorage.getItem('menu_lang') || 'pt';
     const data = MENU_DATA[lang] || MENU_DATA.pt;
 
+    // Botão para voltar à seleção de idioma
+    const backBtn = document.getElementById('back-to-language');
+    if (backBtn) {
+        backBtn.onclick = () => ViewManager.navigateTo('view-language');
+    }
+
     const nav = document.getElementById('cat-nav');
-    
+    if (!nav) return;
+
     nav.innerHTML = data.categories.map((cat, i) => `
         <div class="cat-chip ${i===0?'active':''}" onclick="filterCategory(this, '${cat}')">${cat}</div>
     `).join('');
@@ -47,6 +56,8 @@ function initMenu() {
 
 function renderSections(data) {
     const content = document.getElementById('menu-content');
+    if (!content) return;
+
     content.innerHTML = data.sections.map(sec => `
         <div class="section-group reveal" data-category="${sec.name}">
             <div class="section-hero">
@@ -93,8 +104,7 @@ function filterCategory(el, cat) {
             void sec.offsetWidth; // trigger reflow
             sec.classList.add('reveal');
             sec.style.animationDelay = `${visibleIndex * 0.1}s`;
-            
-            // Re-trigger item animations within the visible section
+
             sec.querySelectorAll('.item-row').forEach((item, idx) => {
                 item.classList.remove('reveal');
                 void item.offsetWidth;
@@ -130,34 +140,29 @@ function showDetail(itemId) {
 
     const sheet = document.getElementById('detail-sheet');
     sheet.classList.add('active');
-    sheet.style.transform = ''; // reset any drag transform
+    sheet.style.transform = '';
     document.getElementById('sheet-overlay').classList.add('active');
 }
 
 function closeDetail() {
     const sheet = document.getElementById('detail-sheet');
     sheet.classList.remove('active');
-    sheet.style.transform = ''; // reset
+    sheet.style.transform = '';
     document.getElementById('sheet-overlay').classList.remove('active');
 }
 
-// Setup Bottom Sheet Touch Drag
 function setupBottomSheetDrag() {
     const sheet = document.getElementById('detail-sheet');
     const handle = document.querySelector('.sheet-handle');
-    
+
     let startY = 0;
     let currentY = 0;
     let isDragging = false;
-    
-    // Only apply drag on mobile/touch screens (sheet is centered on desktop)
+
     const isMobile = () => window.innerWidth < 1024;
 
     const onTouchStart = (e) => {
         if (!isMobile() || !sheet.classList.contains('active')) return;
-        
-        // Check if we are scrolling inside the sheet content. 
-        // We only want to drag if we are at the very top, or touching the handle.
         const content = document.querySelector('.sheet-content');
         if (e.target !== handle && content.scrollTop > 0) return;
 
@@ -171,10 +176,8 @@ function setupBottomSheetDrag() {
         if (!isDragging) return;
         currentY = e.touches[0].clientY;
         const diff = currentY - startY;
-        
-        // Only allow dragging downwards
         if (diff > 0) {
-            e.preventDefault(); // prevent scrolling while dragging
+            e.preventDefault();
             sheet.style.transform = `translateY(${diff}px)`;
         }
     };
@@ -184,13 +187,10 @@ function setupBottomSheetDrag() {
         isDragging = false;
         sheet.classList.remove('dragging');
         sheet.style.transition = 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-        
         const diff = currentY - startY;
-        // If dragged down more than 100px, close it
         if (diff > 100) {
             closeDetail();
         } else {
-            // Snap back
             sheet.style.transform = `translateY(0)`;
         }
     };
@@ -202,12 +202,6 @@ function setupBottomSheetDrag() {
 
 window.addEventListener('DOMContentLoaded', () => {
     setupBottomSheetDrag();
-
-    const savedLang = localStorage.getItem('menu_lang');
-    if(savedLang) {
-        ViewManager.navigateTo('view-main');
-        initMenu();
-    } else {
-        ViewManager.navigateTo('view-language');
-    }
+    // Força a tela de idiomas sempre no início
+    ViewManager.navigateTo('view-language');
 });
