@@ -357,6 +357,29 @@
             touch-action: pan-y;
         }
 
+        .close-detail-btn {
+            position: absolute;
+            top: var(--sp-3);
+            left: var(--sp-3);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 110;
+            transition: var(--transition);
+            color: var(--primary);
+        }
+
+        .close-detail-btn:active {
+            background: rgba(0,0,0,0.1);
+            transform: scale(0.9);
+        }
+
+
         .bottom-sheet.active {
             bottom: 0;
         }
