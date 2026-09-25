@@ -150,6 +150,9 @@ function closeDetail() {
     sheet.classList.remove('active');
     sheet.style.transform = '';
     document.getElementById('sheet-overlay').classList.remove('active');
+
+    // Reset scroll position of the bottom sheet to the top
+    sheet.scrollTop = 0;
 }
 
 function setupBottomSheetDrag() {
