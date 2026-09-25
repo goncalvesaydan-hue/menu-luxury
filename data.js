@@ -34,7 +34,7 @@ const MENU_DATA = {
             {
                 id: "sec-3",
                 name: "Carnes",
-                image: "assets/sec-3.jpg",
+                image: "assets/i9.jpg",
                 items: [
                     { id: "i9", name: "Filete Mignon", price: "32.00", desc: "Medalhão de vitela selecionada, servido sobre um risotto cremoso de cogumelos silvestres", ingredients: ["Vitela", "Cogumelos", "Arroz Arborio"], image: "assets/i9.jpg", tags: ["GF"] },
                     { id: "i10", name: "Costelas de Cordeiro", price: "30.00", desc: "Cordeiro assado lentamente, com um puré rústico de ervilhas frescas e toque de menta", ingredients: ["Cordeiro", "Ervilhas", "Menta"], image: "assets/i10.jpg", tags: ["GF"] },
@@ -89,7 +89,7 @@ const MENU_DATA = {
             {
                 id: "sec-3",
                 name: "Meat",
-                image: "assets/sec-3.jpg",
+                image: "assets/i9.jpg",
                 items: [
                     { id: "i9", name: "Filet Mignon", price: "32.00", desc: "Selected veal medallion, served over a creamy wild mushroom risotto", ingredients: ["Veal", "Mushrooms", "Arborio Rice"], image: "assets/i9.jpg", tags: ["GF"] },
                     { id: "i10", name: "Lamb Chops", price: "30.00", desc: "Slow-roasted lamb, with a rustic fresh pea puree and a touch of mint", ingredients: ["Lamb", "Peas", "Mint"], image: "assets/i10.jpg", tags: ["GF"] },
@@ -144,7 +144,7 @@ const MENU_DATA = {
             {
                 id: "sec-3",
                 name: "Carnes",
-                image: "assets/sec-3.jpg",
+                image: "assets/i9.jpg",
                 items: [
                     { id: "i9", name: "Solomillo Mignon", price: "32.00", desc: "Medallón de ternera seleccionada, servida sobre un risotto cremoso de setas silvestres", ingredients: ["Ternera", "Setas", "Arroz Arborio"], image: "assets/i9.jpg", tags: ["GF"] },
                     { id: "i10", name: "Costillas de Cordero", price: "30.00", desc: "Cordero asada lentamente, con un puré rústico de guisantes frescos y toque de menta", ingredients: ["Cordero", "Guisantes", "Menta"], image: "assets/i10.jpg", tags: ["GF"] },
@@ -199,7 +199,7 @@ const MENU_DATA = {
             {
                 id: "sec-3",
                 name: "Viandes",
-                image: "assets/sec-3.jpg",
+                image: "assets/i9.jpg",
                 items: [
                     { id: "i9", name: "Filet Mignon", price: "32.00", desc: "Médaillon de veau sélectionné, servi sur un risotto crémeux de champignons sauvages", ingredients: ["Veau", "Champignons", "Riz Arborio"], image: "assets/i9.jpg", tags: ["GF"] },
                     { id: "i10", name: "Côtes d'Agneau", price: "30.00", desc: "Agneau rôti lentement, avec une purée rustique de petits pois frais et une touche de menthe", ingredients: ["Agneau", "Petits Pois", "Menthe"], image: "assets/i10.jpg", tags: ["GF"] },
