@@ -71,20 +71,21 @@ function renderSections(data) {
             <div class="items-list">
                 ${sec.items.map((item, idx) => `
                     <div class="item-row" style="animation-delay: ${idx * 0.05}s" onclick="showDetail('${item.id}')">
-                        <div class="item-thumbnail">
-                            <img src="${item.image}" alt="${item.name}" loading="lazy">
-                        </div>
-                        <div class="item-main">
-                            <div class="item-name">
-                                ${item.name}
-                                <div class="item-tags">
-                                    ${item.tags.map(tag => `<span class="diet-tag">${tag}</span>`).join('')}
+                        <div class="item-top-row">
+                            <div class="item-details">
+                                <div class="item-thumbnail">
+                                    <img src="${item.image}" alt="${item.name}" loading="lazy">
                                 </div>
-                                <span class="item-dots"></span>
+                                <div class="item-name">
+                                    ${item.name}
+                                    <div class="item-tags">
+                                        ${item.tags.map(tag => `<span class="diet-tag">${tag}</span>`).join('')}
+                                    </div>
+                                </div>
                             </div>
-                            <div class="item-desc">${item.desc}</div>
+                            <div class="item-price">€${item.price}</div>
                         </div>
-                        <div class="item-price">€${item.price}</div>
+                        <div class="item-desc">${item.desc}</div>
                     </div>
                 `).join('')}
             </div>
