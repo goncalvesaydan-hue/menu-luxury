@@ -93,6 +93,7 @@
             max-width: 320px;
             position: relative;
             z-index: 1;
+            margin: 0 auto;
         }
 
         .welcome-logo {
