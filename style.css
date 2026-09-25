@@ -45,7 +45,7 @@
             line-height: 1.6;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
-            overscroll-behavior-y: none; /* Remove pull-to-refresh */
+            overscroll-behavior-y: none;
         }
 
         #app {
@@ -75,7 +75,7 @@
             align-items: center;
             text-align: center;
             height: 100vh;
-            height: 100dvh; /* Dynamic height for mobile browsers */
+            height: 100dvh;
             background: var(--bg-color);
             position: relative;
         }
@@ -141,7 +141,7 @@
             color: inherit;
             appearance: none;
             outline: none;
-            min-height: 60px; /* Better touch target */
+            min-height: 60px;
         }
 
         .lang-option:active {
@@ -163,7 +163,7 @@
 
         /* --- VIEW: MAIN MENU --- */
         .menu-header {
-            padding: var(--sp-4) 0 var(--sp-2);
+            padding: var(--sp-2) 0 0; /* Removido padding superior para colar no topo */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -182,7 +182,7 @@
             font-weight: 600;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: var(--sp-3);
+            margin-bottom: var(--sp-2); /* Reduzido espaço */
             transition: var(--transition-main);
             background: none;
             border: none;
@@ -194,7 +194,7 @@
         .category-nav {
             display: flex;
             justify-content: flex-start;
-            gap: var(--sp-4);
+            gap: var(--sp-3); /* Reduzido gap para caberem mais */
             padding: 0 var(--sp-4) var(--sp-3) var(--sp-4);
             border-bottom: 1px solid #eee;
             width: 100%;
@@ -205,14 +205,14 @@
 
         .cat-chip {
             font-family: var(--font-serif);
-            font-size: 16px;
+            font-size: 15px; /* Levemente menor */
             color: var(--text-muted);
             cursor: pointer;
             transition: var(--transition-main);
             position: relative;
             padding: var(--sp-1) 0;
             white-space: nowrap;
-            min-height: 44px;
+            min-height: 40px;
             display: flex;
             align-items: center;
         }
@@ -264,7 +264,7 @@
 
         .section-title {
             font-family: var(--font-serif);
-            font-size: 36px; /* Slightly smaller for mobile */
+            font-size: 36px;
             line-height: 1.1;
             margin-bottom: var(--sp-4);
             color: var(--primary-color);
