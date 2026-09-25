@@ -76,6 +76,8 @@
             height: 100dvh;
             background: var(--bg);
             position: relative;
+            display: none; /* Added to match .view definition */
+            flex-direction: column;
         }
 
         .language-bg {
@@ -90,10 +92,14 @@
         }
 
         .welcome-container {
+            width: 100%;
             max-width: 320px;
             position: relative;
             z-index: 1;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .welcome-logo {
