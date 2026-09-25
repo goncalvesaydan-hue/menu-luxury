@@ -46,7 +46,7 @@ const MENU_DATA = {
             {
                 id: "sec-4",
                 name: "Sobremesas",
-                image: "assets/sec-4.jpg",
+                image: "assets/i12.jpg",
                 items: [
                     { id: "i12", name: "Fondant de Chocolate", price: "10.00", desc: "Chocolate belga fundido, com coração líquido, servida com uma bola de gelado de baunilha artesanal", ingredients: ["Chocolate", "Baunilha", "Ovos"], image: "assets/i12.jpg", tags: [] },
                     { id: "i13", name: "Cheesecake de Frutos", price: "9.00", desc: "Cheesecake cremoso com uma calda vibrante de frutos do bosque colhidos na estação", ingredients: ["Queijo Creme", "Frutos Vermelhos"], image: "assets/i13.jpg", tags: ["GF"] },
@@ -101,7 +101,7 @@ const MENU_DATA = {
             {
                 id: "sec-4",
                 name: "Desserts",
-                image: "assets/sec-4.jpg",
+                image: "assets/i12.jpg",
                 items: [
                     { id: "i12", name: "Chocolate Fondant", price: "10.00", desc: "Melted Belgian chocolate, with a liquid heart, served with a scoop of artisanal vanilla ice cream", ingredients: ["Chocolate", "Vanilla", "Eggs"], image: "assets/i12.jpg", tags: [] },
                     { id: "i13", name: "Fruit Cheesecake", price: "9.00", desc: "Creamy cheesecake with a vibrant berry glaze picked in season", ingredients: ["Cream Cheese", "Red Fruits"], image: "assets/i13.jpg", tags: ["GF"] },
@@ -156,7 +156,7 @@ const MENU_DATA = {
             {
                 id: "sec-4",
                 name: "Postres",
-                image: "assets/sec-4.jpg",
+                image: "assets/i12.jpg",
                 items: [
                     { id: "i12", name: "Fondant de Chocolate", price: "10.00", desc: "Chocolate belga fundido, con corazón líquido, servida con una bola de helado de vainilla artesanal", ingredients: ["Chocolate", "Vainilla", "Huevos"], image: "assets/i12.jpg", tags: [] },
                     { id: "i13", name: "Cheesecake de Frutos", price: "9.00", desc: "Cheesecake cremoso con una salsa vibrante de frutos del bosque recogidos en temporada", ingredients: ["Queso Crema", "Frutos Rojos"], image: "assets/i13.jpg", tags: ["GF"] },
@@ -210,7 +210,7 @@ const MENU_DATA = {
             {
                 id: "sec-4",
                 name: "Desserts",
-                image: "assets/sec-4.jpg",
+                image: "assets/i12.jpg",
                 items: [
                     { id: "i12", name: "Fondant au Chocolat", price: "10.00", desc: "Chocolat belge fondu, avec un cœur liquide, servi avec une boule de glace à la vanille artisanale", ingredients: ["Chocolat", "Vanille", "Œufs"], image: "assets/i12.jpg", tags: [] },
                     { id: "i13", name: "Cheesecake aux Fruits", price: "9.00", desc: "Cheesecake crémeux avec un glaçage vibrant de fruits des bois cueillis en saison", ingredients: ["Fromage à la crème", "Fruits Rouges"], image: "assets/i13.jpg", tags: ["GF"] },
