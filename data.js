@@ -8,7 +8,7 @@ const MENU_DATA = {
             {
                 id: "sec-1",
                 name: "Entradas",
-                image: "assets/sec-1.jpg",
+                image: "assets/i1.jpg",
                 items: [
                     { id: "i1", name: "Carpaccio de Salmão", price: "14.00", desc: "Lâminas de salmão fresco que chegam todas as manhãs, finalizadas com alcaparras crocantes e limão siciliano", ingredients: ["Salmão", "Alcaparras", "Limão", "Azeite"], image: "assets/i1.jpg", tags: ["GF"] },
                     { id: "i2", name: "Burrata Cremosa", price: "12.50", desc: "A autêntica Burrata de Puglia, servida com tomates cereja confitados lentamente em azeite extra virgem", ingredients: ["Burrata", "Tomate", "Manjericão"], image: "assets/i2.jpg", tags: ["V"] },
