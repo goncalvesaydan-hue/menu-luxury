@@ -167,19 +167,27 @@ function setupBottomSheetDrag() {
 
     const onTouchStart = (e) => {
         if (!isMobile() || !sheet.classList.contains('active')) return;
-        const content = document.querySelector('.sheet-content');
-        if (e.target !== handle && content.scrollTop > 0) return;
 
-        startY = e.touches[0].clientY;
-        isDragging = true;
-        sheet.classList.add('dragging');
-        sheet.style.transition = 'none';
+        // Only prevent scroll and allow dragging if we are at the very top of the content
+        if (sheet.scrollTop > 0) {
+            return;
+        }
+
+        if (e.target === handle || e.target.closest('.sheet-handle')) {
+            startY = e.touches[0].clientY;
+            isDragging = true;
+            sheet.classList.add('dragging');
+            sheet.style.transition = 'none';
+            e.preventDefault();
+        }
     };
 
     const onTouchMove = (e) => {
         if (!isDragging) return;
+
         currentY = e.touches[0].clientY;
         const diff = currentY - startY;
+
         if (diff > 0) {
             e.preventDefault();
             sheet.style.transform = `translateY(${diff}px)`;

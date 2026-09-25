@@ -354,7 +354,7 @@
             overflow-y: auto;
             display: flex;
             flex-direction: column;
-            touch-action: pan-y;
+            touch-action: none;
         }
 
         .bottom-sheet.active {
