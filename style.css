@@ -277,10 +277,9 @@
         }
 
         .item-row {
-            display: grid;
-            grid-template-columns: 80px 1fr auto;
-            gap: var(--sp-4);
-            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: var(--sp-2);
             cursor: pointer;
             padding: var(--sp-3) var(--sp-4);
             border-bottom: 1px solid rgba(0,0,0,0.03);
@@ -485,3 +484,18 @@
         }
 # Add padding to prevent content from being hidden under the fixed header
 #view-main { padding-top: 130px; }
+
+.item-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sp-2);
+    width: 100%;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    width: 100%;
+}
