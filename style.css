@@ -173,11 +173,12 @@
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
+            z-index: 9999;
             background: var(--bg);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             width: 100%;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .menu-logo-small {
